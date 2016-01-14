@@ -8,23 +8,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="前言一直想用blog来记录自己的学习路径,总是嫌麻烦,现在终于下定决心把blog建了起来,就从这一篇开始进阶之路吧!
 第一步 Github和配置SSH在搭建之前你需要一个github账号。如果没有账号，请注册；然后你要创建一个仓库New repository，名称为你github用户名.github.io。
-先生成SSH KEY
-$ssh-keygen -t rsa -C &amp;quot;xxxx@x">
+然后生成SSH Key,终端运行
+$ssh-keygen -t rsa -C &amp;quot;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mac 下使用Hexo + Github 搭建自己的blog">
 <meta property="og:url" content="http://yoursite.com/2016/01/14/Mac-下使用Hexo-Github-搭建自己的blog/index.html">
 <meta property="og:site_name" content="kongxc的果园">
 <meta property="og:description" content="前言一直想用blog来记录自己的学习路径,总是嫌麻烦,现在终于下定决心把blog建了起来,就从这一篇开始进阶之路吧!
 第一步 Github和配置SSH在搭建之前你需要一个github账号。如果没有账号，请注册；然后你要创建一个仓库New repository，名称为你github用户名.github.io。
-先生成SSH KEY
-$ssh-keygen -t rsa -C &amp;quot;xxxx@x">
-<meta property="og:updated_time" content="2016-01-14T10:40:08.000Z">
+然后生成SSH Key,终端运行
+$ssh-keygen -t rsa -C &amp;quot;">
+<meta property="og:updated_time" content="2016-01-14T10:44:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac 下使用Hexo + Github 搭建自己的blog">
 <meta name="twitter:description" content="前言一直想用blog来记录自己的学习路径,总是嫌麻烦,现在终于下定决心把blog建了起来,就从这一篇开始进阶之路吧!
 第一步 Github和配置SSH在搭建之前你需要一个github账号。如果没有账号，请注册；然后你要创建一个仓库New repository，名称为你github用户名.github.io。
-先生成SSH KEY
-$ssh-keygen -t rsa -C &amp;quot;xxxx@x">
+然后生成SSH Key,终端运行
+$ssh-keygen -t rsa -C &amp;quot;">
   
     <link rel="alternative" href="/atom.xml" title="kongxc的果园" type="application/atom+xml">
   
@@ -245,7 +245,7 @@ $ssh-keygen -t rsa -C &amp;quot;xxxx@x">
       
         <h1 id="u524D_u8A00"><a href="#u524D_u8A00" class="headerlink" title="前言"></a>前言</h1><p>一直想用blog来记录自己的学习路径,总是嫌麻烦,现在终于下定决心把blog建了起来,就从这一篇开始进阶之路吧!</p>
 <h2 id="u7B2C_u4E00_u6B65_Github_u548C_u914D_u7F6ESSH"><a href="#u7B2C_u4E00_u6B65_Github_u548C_u914D_u7F6ESSH" class="headerlink" title="第一步 Github和配置SSH"></a>第一步 Github和配置SSH</h2><p>在搭建之前你需要一个github账号。如果没有账号，请注册；然后你要创建一个仓库New repository，名称为你github用户名.github.io。</p>
-<p>先生成SSH KEY</p>
+<p>然后生成SSH Key,终端运行</p>
 <pre><code>$ssh-keygen -t rsa -C &quot;xxxx@xxxx.com” #引号里为你的邮箱地址
 </code></pre><p>登陆github页面 点击自己的头像-&gt;Setting-&gt;SSH Public Keys-&gt;Add<br>把生成的key(id_rsa.pub)内容copy到输入框</p>
 <p>测试是否连接</p>
@@ -269,7 +269,7 @@ $hexo server  #启动服务器  简写 hexo s
 </code></pre><p>出现</p>
 <pre><code>Hexo is running at http://0.0.0.0:4000/ 
 </code></pre><p>证明服务器已经启动(可以浏览器上查看这个页面) ctrl+c退出</p>
-<p>修改hexo目录下_config.yml deplo下的三行需要缩进，否者无法识别。冒号后面必须空一格,不然也没法识别</p>
+<p>然后修改hexo目录下_config.yml文件, 注意 deploy下的三行需要缩进，冒号后面必须空一格,不然也没法识别</p>
 <pre><code>deploy:
     type: git
     repo: git@github.com:xxxxxx/xxxxxx.github.io.git
@@ -291,7 +291,7 @@ hexo s == hexo server
 hexo d == hexo deploy
 </code></pre><h2 id="u7ED3_u675F"><a href="#u7ED3_u675F" class="headerlink" title="结束"></a>结束</h2><p>新建文章时</p>
 <pre><code>hexo new &quot;postName&quot; #新建文章
-</code></pre><p>在source文件下_post里面会有一个.md文件,你可以使用Markdown来写你的博客写完之后</p>
+</code></pre><p>在source文件下_post里面会有一个.md文件,你可以使用<code>Markdown</code>来写你的博客写完之后</p>
 <pre><code>hexo g #生成页面
 hexo d $发布就好啦
 </code></pre>
