@@ -6,25 +6,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>Mac 下使用Hexo + Github 搭建自己的blog | kongxc的果园</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#前言一直想用blog来记录自己的学习路径,总是嫌麻烦,现在终于下定决心把blog建了起来,就从这一篇开始进阶之路吧!
-##第一步 Github和配置SSH在搭建之前你需要一个github账号。如果没有账号，请注册；然后你要创建一个仓库New repository，名称为你github用户名.github.io。
+  <meta name="description" content="#前言
+一直想用blog来记录自己的学习路径,总是嫌麻烦,现在终于下定决心把blog建了起来,就从这一篇开始进阶之路吧!
+##第一步 Github和配置SSH
+在搭建之前你需要一个github账号。如果没有账号，请注册；然后你要创建一个仓库New repository，名称为你github用户名.github.io。
 先生成SSH KEY
-$ssh-keygen -t rsa -C &amp;quot;xxx">
+$ssh-keygen -t rsa -C &amp;quot;x">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mac 下使用Hexo + Github 搭建自己的blog">
 <meta property="og:url" content="http://yoursite.com/2016/01/14/Mac-下使用Hexo-Github-搭建自己的blog/index.html">
 <meta property="og:site_name" content="kongxc的果园">
-<meta property="og:description" content="#前言一直想用blog来记录自己的学习路径,总是嫌麻烦,现在终于下定决心把blog建了起来,就从这一篇开始进阶之路吧!
-##第一步 Github和配置SSH在搭建之前你需要一个github账号。如果没有账号，请注册；然后你要创建一个仓库New repository，名称为你github用户名.github.io。
+<meta property="og:description" content="#前言
+一直想用blog来记录自己的学习路径,总是嫌麻烦,现在终于下定决心把blog建了起来,就从这一篇开始进阶之路吧!
+##第一步 Github和配置SSH
+在搭建之前你需要一个github账号。如果没有账号，请注册；然后你要创建一个仓库New repository，名称为你github用户名.github.io。
 先生成SSH KEY
-$ssh-keygen -t rsa -C &amp;quot;xxx">
-<meta property="og:updated_time" content="2016-01-14T10:33:47.000Z">
+$ssh-keygen -t rsa -C &amp;quot;x">
+<meta property="og:updated_time" content="2016-01-14T10:37:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac 下使用Hexo + Github 搭建自己的blog">
-<meta name="twitter:description" content="#前言一直想用blog来记录自己的学习路径,总是嫌麻烦,现在终于下定决心把blog建了起来,就从这一篇开始进阶之路吧!
-##第一步 Github和配置SSH在搭建之前你需要一个github账号。如果没有账号，请注册；然后你要创建一个仓库New repository，名称为你github用户名.github.io。
+<meta name="twitter:description" content="#前言
+一直想用blog来记录自己的学习路径,总是嫌麻烦,现在终于下定决心把blog建了起来,就从这一篇开始进阶之路吧!
+##第一步 Github和配置SSH
+在搭建之前你需要一个github账号。如果没有账号，请注册；然后你要创建一个仓库New repository，名称为你github用户名.github.io。
 先生成SSH KEY
-$ssh-keygen -t rsa -C &amp;quot;xxx">
+$ssh-keygen -t rsa -C &amp;quot;x">
   
     <link rel="alternative" href="/atom.xml" title="kongxc的果园" type="application/atom+xml">
   
@@ -243,8 +249,10 @@ $ssh-keygen -t rsa -C &amp;quot;xxx">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#前言<br>一直想用blog来记录自己的学习路径,总是嫌麻烦,现在终于下定决心把blog建了起来,就从这一篇开始进阶之路吧!</p>
-<p>##第一步 Github和配置SSH<br>在搭建之前你需要一个github账号。如果没有账号，请注册；然后你要创建一个仓库New repository，名称为你github用户名.github.io。</p>
+        <p>#前言</p>
+<p>一直想用blog来记录自己的学习路径,总是嫌麻烦,现在终于下定决心把blog建了起来,就从这一篇开始进阶之路吧!</p>
+<p>##第一步 Github和配置SSH</p>
+<p>在搭建之前你需要一个github账号。如果没有账号，请注册；然后你要创建一个仓库New repository，名称为你github用户名.github.io。</p>
 <p>先生成SSH KEY</p>
 <pre><code>$ssh-keygen -t rsa -C &quot;xxxx@xxxx.com” #引号里为你的邮箱地址
 </code></pre><p>登陆github页面 点击自己的头像-&gt;Setting-&gt;SSH Public Keys-&gt;Add<br>把生成的key(id_rsa.pub)内容copy到输入框</p>
@@ -253,11 +261,14 @@ $ssh-keygen -t rsa -C &amp;quot;xxx">
 </code></pre><p>设置个人信息</p>
 <pre><code>$git config --global user.name &quot;xxx”
 $git config --global user.email xxxx@gmail.com
-</code></pre><p>##第二步 Homebrew安装<br>终端运行</p>
+</code></pre><p>##第二步 Homebrew安装</p>
+<p>终端运行</p>
 <pre><code>$ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
-</code></pre><p>##第三步 git<br>如果你已经安装了xcode,这一步可以跳过,否则终端运行</p>
+</code></pre><p>##第三步 git</p>
+<p>如果你已经安装了xcode,这一步可以跳过,否则终端运行</p>
 <pre><code>$brew install git
-</code></pre><p>##第四步 node.js<br>终端运行</p>
+</code></pre><p>##第四步 node.js</p>
+<p>终端运行</p>
 <pre><code>$brew install node
 </code></pre><h2 id="u7B2C_u4E94_u6B65_Hexo_u5B89_u88C5"><a href="#u7B2C_u4E94_u6B65_Hexo_u5B89_u88C5" class="headerlink" title="第五步 Hexo安装"></a>第五步 Hexo安装</h2><p>任意地方创建一个文件夹,终端进入文件夹然后运行</p>
 <pre><code>$nmp install -g hexo 
@@ -287,9 +298,15 @@ hexo new page &quot;pageName&quot; #新建頁面
 hexo generate #生成靜態頁面至public目錄
 hexo server #開啟預覽訪問端口（默认端口4000，&apos;ctrl + c&apos;關閉server）
 hexo deploy #將.deploy目錄部署到GitHub
-</code></pre><p>####简写<br>    hexo n == hexo new<br>    hexo g == hexo generate<br>    hexo s == hexo server<br>    hexo d == hexo deploy</p>
-<p>##结束<br>新建文章时<br>    hexo new “postName” #新建文章</p>
-<p>在source文件下_post里面会有一个.md文件,你可以使用Markdown来写你的博客写完之后</p>
+</code></pre><p>####简写</p>
+<pre><code>hexo n == hexo new
+hexo g == hexo generate
+hexo s == hexo server
+hexo d == hexo deploy
+</code></pre><p>##结束</p>
+<p>新建文章时</p>
+<pre><code>hexo new &quot;postName&quot; #新建文章
+</code></pre><p>在source文件下_post里面会有一个.md文件,你可以使用Markdown来写你的博客写完之后</p>
 <pre><code>hexo g #生成页面
 hexo d $发布就好啦
 </code></pre>
